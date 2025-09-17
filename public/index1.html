@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/output.css" />
-    <script src="/jquery-3.7.1.min.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="demo" class="text-2xl font-bold text-sky-600">Javascript</div>
-    <input
-      id="btn1"
-      type="button"
-      value="Click Me"
-      class="bg-blue-600 px-3 py-2 font-bold text-white rounded-lg cursor-pointer"
-    />
-    <input
-      id="btn2"
-      type="button"
-      value="Click Me"
-      class="bg-red-600 px-3 py-2 font-bold text-white rounded-lg cursor-pointer"
-    />
-  </body>
-  <script>
-    $(document).ready(function () {
-      $("#btn1").click(function () {
-        $("#demo").html("Jquery");
-      });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/output.css" />
+  <script src="/jquery-3.7.1.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="demo" class="text-2xl font-bold text-sky-600">Javascript</div>
+  <input id="btn1" type="button" value="Click Me"
+    class="bg-blue-600 px-3 py-2 font-bold text-white rounded-lg cursor-pointer" />
+  <input id="btn2" type="button" value="Click Me"
+    class="bg-red-600 px-3 py-2 font-bold text-white rounded-lg cursor-pointer" />
+</body>
+<script>
+  $(document).ready(function () {
+    $("#btn1").click(function () {
+      $("#demo").html("Jquery");
     });
-  </script>
+  });
+</script>
+
 </html>
