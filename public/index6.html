@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <script src="/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="w-full h-screen flex justify-center items-center">
+    <div class="flex gap-4">
+        <img id="img" data-img="A" src="/assets/img1.png" class="w-[250px] h-[300px]" alt="">
+        <img id="img" src="/assets/img2.png" alt="" class="w-[250px] h-[300px]">
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#img").mouseover(function () {
+            alert($(this).data("img")); // img = data-img (data-) | value = A
+        });
+        $("#img").mouseleave(function () {
+            
+        });
+        // $("#img2").mouseover(function () {
+        //     $(this).attr("src", "/assets/img4.png")
+        // })
+        // $("#img2").mouseleave(function () {
+        //     $(this).attr("src", "/assets/img2.png")
+        // });
+    })
+</script>
+
+</html>
